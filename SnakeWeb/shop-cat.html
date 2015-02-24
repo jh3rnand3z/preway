@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Snake Eye Vape<</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    
+	<!-- Style CSS -->
+	<link href="style.css" rel="stylesheet">
+    <!-- Customize CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+    <!-- Theme Option CSS -->
+    <link rel="stylesheet" href="css/theme-options.css" media="all">
+    <!-- Switch Style -->
+    <link rel="stylesheet" href="css/colors/default.css" type="text/css" id="colors" />
+    
+    
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="assets/js/html5shiv.js"></script>
+	  <script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="placeholders/ico/favicon1.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="placeholders/ico/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="placeholders/ico/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="placeholders/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="placeholders/ico/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="placeholders/ico/apple-touch-icon-144x144.png">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46810500-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+<body class="light-foot">
+	<div id="pageloader">
+        <div class="loader-item">
+            <img src="images/loading.gif" alt='loader' />
+        </div>
+    </div>
+    
+<!--wrapper-->
+<div class="wrapper">
+     <header>
+    <section class="topbar clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="t-left col-sm-6 clearfix">
+                <span>  <i class="fa fa-map-marker"></i> 10345 Petrey Hwy Luverne, AL</span>
+                <span>  <i class="fa fa-envelope"></i> <a href="mailto:hello@woorockets.com">info@snakeeyevape.com</a></span> 
+                <span>  <i class="fa fa-phone"></i> +1 877 821 6062</span> 
+               </div><!--end:t-left-->
+               
+               <div class="t-right col-sm-6 clearfix">
+                    <ul class="nav">
+                      <li><a href="#loginBox"  data-toggle="modal"> <i class="fa fa-user"></i>  Login</a></li>
+                      
+                      <li class="itwm-header-cart">
+                        <a href="#cartBox">
+                                <i class="fa fa-shopping-cart"></i>
+                            <span class="amount">$400.00</span>
+                          </a>
+                          <div class="itwm-cart-content">
+                            <h4><strong>2 Item</strong> In The Shopping Cart</h4>
+                                <div class="widget_shopping_cart_content">
+                                <ul class="cart_list product_list_widget ">
+                                    <li>
+                                        <a href="shop-details.html">
+                                        <img class="attachment-shop_thumbnail wp-post-image" src="placeholders/shop/thumbs/p-07.jpg">
+                                       Aspire Nautilus Mini<
+                                        </a>
+                                        <span class="quantity">
+                                            1 × <span class="amount">$xx.xx</span>
+                                        </span>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="shop-details.html">
+                                        <img class="attachment-shop_thumbnail wp-post-image" src="placeholders/shop/thumbs/p-08.jpg">
+                                       iTaste MVP 20w
+                                        </a>
+                                        <span class="quantity">
+                                            1 × <span class="amount">$xx.xx</span>
+                                        </span>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                                   <p class="total">
+                                        <strong>Subtotal:</strong>
+                                        <span class="amount">$xx.xx</span>
+                                </p>
+                                <p class="buttons">
+                                        <a class="button wc-forward" href="shop-viewcart.html">View Cart</a>
+                                        <a class="button checkout wc-forward" href="shop-checkout.html">Checkout</a>
+                                </p>
+                                </div>
+                          </div>
+                      </li>
+                  </ul>
+    
+               </div><!--end:t-right-->
+               
+               
+               <!--modal login box-->
+               <div class="modal fade" id="loginBox">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Member Area</h4>
+                      </div>
+                      <div class="modal-body row">
+                      
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <p>
+                                <label for="username"> Username :</label>
+                                <input id="username" type="text" aria-required="true" size="30" value="" name="username">
+                              </p>
+                             <p> <a href="#">» Creat new account</a>  </p>   
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <p>
+                                <label for="password"> Password :</label>
+                                <input id="password" type="password" aria-required="true" size="30" value="" name="password">
+                              </p>
+                             <p> <a href="#">» Lost Password ?</a>  </p>   
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-violet">Login</button>
+                      </div>
+                    </div>
+                  </div>
+               </div><!--end:loginBox-->
+                        
+            </div><!--end:row-->
+        </div>
+    </section><!--end:topbar-->
+    
+         <div class="nav-container stickmenu clearfix">
+         <div class="inner">
+           <!-- logo -->
+                <a href="#" class="logo">
+                <img src="placeholders/main-logo01.png"/> 
+               </a>
+           <!-- end:logo -->    
+            
+           <!-- main-menu -->
+           <ul class="main-menu">
+                <li class="multi-level-menu">
+                  <a href="index.html">New to Vaping?</a>
+                  
+                </li>
+               <!--submenu-->
+               <li class="multi-level-menu">
+                <a href="sev-products.html">Starter Kits</a>
+                   
+               </li>
+               <!--end: submenu-->
+               
+               <li class="multi-level-menu">
+                <a href="sev-products1.html">Pens</a>
+               
+               </li>
+               <!--megamenu-->
+               <li class="mega-menu">
+                <a href="sev-products2.html">Atomizers</a>
+                    
+               </li>
+               <!--end:megamenu-->
+               <li class="multi-level-menu">
+                <a href="sev-products3.html">Juices</a>
+                   
+               </li>
+               <!--end: submenu-->
+                              
+               <li class="multi-level-menu">
+                  <a href="sev-products4.html">Batteries & Charges</a>
+                  
+                </li>
+
+                 <li class="multi-level-menu">
+                  <a href="sev-products5.html">Accessories</a>
+                  
+                </li>
+               
+               <li class="multi-level-menu active">
+                  <a href="shop-cat.html">Shop</a>
+                
+                </li>
+
+                <li class="multi-level-menu ">
+                  <a href="contacts.html">Contact</a>
+                
+                </li>
+                
+                
+               <li>
+                <form id="search-form">
+                    <input type="search" placeholder="Search" value="">
+                </form>
+               </li>
+           </ul>
+           <!-- end:main-menu -->
+           
+           
+           <div id="mobile-menu" class="dl-menuwrapper">
+                <button class="dl-trigger"><i class="fa fa-bars"></i></button>
+                <ul class="dl-menu">
+                    <li>
+                        <a href="index.html">New to Vaping?</a>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="sev-products.html">Starter Kits</a>
+                        
+                    </li>
+                  
+                    <li>
+                    <a href="sev-products1.html">Pens</a>
+                   
+                   </li>
+                    
+                   <li>
+                        <a href="sev-products2.html">Atomizers</a>
+                      
+                    </li>
+                
+                    
+                    <li>
+                        <a href="sev-products3.html">Juices</a>
+                        
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="sev-products4.html">Batteries & Charges</a>
+                       
+                    </li>
+                    
+                    <li>
+                        <a href="sev-products5.html">Accessories</a>
+                       
+                    </li>
+
+
+                    <li>
+                    <a href="shop-cat.html">Shop</a>
+                    </li>
+                
+
+                </ul>
+            </div><!-- /dl-menuwrapper -->
+           
+           
+        </div>
+        <!--end:inner-->
+        </div><!--end:nav-container-->
+    </header>
+    <!-- end:header -->
+    
+    <div class="page-header title-left">
+    	<div class="container">
+        	<div class="row">
+        	<div class="col-lg-12">
+       			<h1>Category</h1>
+               <ul class="breadcrumb">
+                  <li><a href="index1.html">Home</a></li>
+                  <li><a href="shop.html">Shop</a></li>
+               	<li>Category</li>
+               </ul>  
+        	</div>
+            </div><!--end:row-->
+       </div>
+    </div><!--end:page-title-->
+    
+    
+    <div id="main">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              		<div class="sidebar">
+                    	<section class="widget widget_search clearfix">
+                        <form role="search" method="get" id="searchform" class="searchform" action="#">
+                            <input type="text" value="type your keyword" name="s" id="s" />
+                        </form>
+                      </section>
+                        
+                  	<section class="widget widget_nav_menu clearfix">
+                    		<h4 class="widget-title">Product Categories</h4>
+							<ul class="menu">
+                            <li><a href="sev-products.html">	Starter Kits	<span>66</span></a></li>
+                            <li><a href="sev-products1.html">	Pens			<span>33</span></a></li>
+                            <li><a href="sev-products2.html">	Atomizers			<span>54</span></a></li>
+                            <li><a href="sev-products3.html">	Juices	<span>13</span></a></li>  
+                            <li><a href="sev-products4.html">	Batteries & Charges<span>16</span></a></li> 
+                            <li><a href="sev-products5.html">	Accessories<span>37</span></a></li>
+                         </ul>
+                         <div class="clear"></div>
+						</section>
+                        
+                      
+                        
+                     <section class="widget widget_nav_menu clearfix">
+                    		<h4 class="widget-title">Filter by Price</h4>
+							<div class="f-price">
+                         		<div id="slider-range"></div>
+                             <p>
+                                <input type="text" id="amount">
+                                <button class="btn btn-small btn-dark" type="button"> Filter </button>
+                             </p>   
+                         </div>
+                         <div class="clear"></div>
+						</section>   
+                        
+                      
+                           
+                              
+                        
+                      <div class="banner">
+                      	<a href="#"><img src="placeholders/shop/thumbs/p-11.jpg"></a>
+                      </div>  
+                      
+                      <div class="clearfix"></div>    
+                      
+                    
+                     
+                        
+                  </div><!--end:Sidebar--> 
+              </div><!--end:colleft--> 
+              
+              
+              
+              
+           	<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            		<div class="row">
+                  	<div class="col-md-4 col-sm-4 col-xs-12">
+                    		 <div class="text-heading line"> <h3> Showing all products </h3> </div>
+                      </div><!--ed:col-3-->  
+                      <div class="col-md-8 col-sm-8 col-xs-12">
+                        
+                        
+                        <div class="style-switch">
+                        		<a href="#" class="grid active"><i class="fa fa-th-large"></i></a>
+                             <a href="#" class="list"><i class="fa fa-th-list"></i></a>   
+                        </div>
+                        
+                        <select class="cat-filter">
+                            <option value="">Default sorting...</option>
+                            <option>Sort by newness</option>
+                            <option>Sort by popularity</option>
+                            <option>Sort by average rating</option>
+                            <option>Sort by price : Low to High</option>
+                            <option>Sort by price : High to Low</option>
+                        </select>
+                        
+                      </div><!--end:col-9-->
+                  </div><!--end:row-->
+            		
+               	<ul class="all-products">
+              			<li>
+                          <div class="s1-item">
+                              <div class="product-thumb">
+                              <a href="placeholders/shop/thumbs/p-01.jpg" class="prettyPhoto"><img src="placeholders/shop/thumbs/p-01.jpg"></a>
+                              </div>
+                              <div class="p-info">
+                                <h4>Aspire Atlantis Atomizer</h4>
+                                <span> $xx.xx	</span>
+                                <div class="p-desc">
+                                		<h5>Description</h5>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eu tortor mollis, placerat purus velVestibulum ante ipsum primis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>    	
+                                </div>
+                                <nav>
+                                    <a href="shop-details.html"><i class="fa fa-info-circle"></i> </a>
+                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                    <a href="placeholders/shop/thumbs/p-01.jpg" class="prettyPhoto"><i class="fa fa-search"></i> </a>
+                                    <a href="#"><i class="fa fa-star"></i> </a>
+                                </nav>  
+                              </div><!--end:p-info -->
+                          </div> 
+                     </li><!--end:item-->
+                     
+                     
+                     
+                     <li>
+                          <div class="s1-item">
+                              <div class="product-thumb">
+                              <a href="placeholders/shop/thumbs/p-02.jpg" class="prettyPhoto"><img src="placeholders/shop/thumbs/p-02.jpg"></a>
+                              </div>
+                              <div class="p-info">
+                                <h4>Adirondack Vape juice</h4>
+                                <span> $xx.xx	</span>
+                                <div class="p-desc">
+                                		<h5>Description</h5>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eu tortor mollis, placerat purus velVestibulum ante ipsum primis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>    	
+                                </div>
+                                <nav>
+                                    <a href="shop-details.html"><i class="fa fa-info-circle"></i> </a>
+                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                    <a href="placeholders/shop/thumbs/p-02.jpg" class="prettyPhoto"><i class="fa fa-search"></i> </a>
+                                    <a href="#"><i class="fa fa-star"></i> </a>
+                                </nav>  
+                              </div><!--end:p-info -->
+                          </div> 
+                     </li><!--end:item-->
+                     
+                     
+                     <li>
+                          <div class="s1-item">
+                              <div class="product-thumb">
+                              <a href="placeholders/shop/thumbs/p-03.jpg" class="prettyPhoto"><img src="placeholders/shop/thumbs/p-03.jpg"></a>
+                              </div>
+                              <div class="p-info">
+                                <h4>King of the Clouds Vape juice</h4>
+                                <span> $xx.xx</span>
+                                <div class="p-desc">
+                                		<h5>Description</h5>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eu tortor mollis, placerat purus velVestibulum ante ipsum primis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>    	
+                                </div>
+                                <nav>
+                                    <a href="shop-details.html"><i class="fa fa-info-circle"></i> </a>
+                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                    <a href="placeholders/shop/thumbs/p-03.jpg" class="prettyPhoto"><i class="fa fa-search"></i> </a>
+                                    <a href="#"><i class="fa fa-star"></i> </a>
+                                </nav>  
+                              </div><!--end:p-info -->
+                          </div> 
+                     </li><!--end:item-->
+                     
+                     
+                     <li>
+                          <div class="s1-item">
+                              <div class="product-thumb">
+                              <a href="placeholders/shop/thumbs/p-04.jpg" class="prettyPhoto"><img src="placeholders/shop/thumbs/p-04.jpg"></a>
+                              </div>
+                              <div class="p-info">
+                                <h4>Fogs brew Vape juice</h4>
+                                <span> $xx.xx	</span>
+                                <div class="p-desc">
+                                		<h5>Description</h5>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eu tortor mollis, placerat purus velVestibulum ante ipsum primis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>    	
+                                </div>
+                                <nav>
+                                    <a href="shop-details.html"><i class="fa fa-info-circle"></i> </a>
+                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                    <a href="placeholders/shop/thumbs/p-04.jpg" class="prettyPhoto"><i class="fa fa-search"></i> </a>
+                                    <a href="#"><i class="fa fa-star"></i> </a>
+                                </nav>  
+                              </div><!--end:p-info -->
+                          </div> 
+                     </li><!--end:item-->
+                     
+                     
+                     
+                     <li>
+                          <div class="s1-item">
+                              <div class="product-thumb">
+                              <a href="placeholders/shop/thumbs/p-05.jpg" class="prettyPhoto"><img src="placeholders/shop/thumbs/p-05.jpg"></a>
+                              </div>
+                              <div class="p-info">
+                                <h4>Kanger sub tank</h4>
+                                <span> $xx.xx</span>
+                                <div class="p-desc">
+                                		<h5>Description</h5>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eu tortor mollis, placerat purus velVestibulum ante ipsum primis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>    	
+                                </div>
+                                <nav>
+                                    <a href="shop-details.html"><i class="fa fa-info-circle"></i> </a>
+                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                    <a href="placeholders/shop/thumbs/p-05.jpg" class="prettyPhoto"><i class="fa fa-search"></i> </a>
+                                    <a href="#"><i class="fa fa-star"></i> </a>
+                                </nav>  
+                              </div><!--end:p-info -->
+                          </div> 
+                     </li><!--end:item-->
+                     
+                     
+                     <li>
+                          <div class="s1-item">
+                              <div class="product-thumb">
+                              <a href="placeholders/shop/thumbs/p-06.jpg" class="prettyPhoto"><img src="placeholders/shop/thumbs/p-06.jpg"></a>
+                              </div>
+                              <div class="p-info">
+                                <h4>Aspire Nautilus</h4>
+                                <span> $xx.xx 	</span>
+                                <div class="p-desc">
+                                		<h5>Description</h5>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eu tortor mollis, placerat purus velVestibulum ante ipsum primis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>    	
+                                </div>
+                                <nav>
+                                    <a href="shop-details.html"><i class="fa fa-info-circle"></i> </a>
+                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                    <a href="placeholders/shop/thumbs/p-06.jpg" class="prettyPhoto"><i class="fa fa-search"></i> </a>
+                                    <a href="#"><i class="fa fa-star"></i> </a>
+                                </nav>  
+                              </div><!--end:p-info -->
+                          </div> 
+                     </li><!--end:item-->
+                     
+                     
+                     <li>
+                          <div class="s1-item">
+                              <div class="product-thumb">
+                              <a href="placeholders/shop/thumbs/p-07.jpg" class="prettyPhoto"><img src="placeholders/shop/thumbs/p-07.jpg"></a>
+                              </div>
+                              <div class="p-info">
+                                <h4>Aspire Nautilus Mini</h4>
+                                <span> $xx.xx 	</span>
+                                <div class="p-desc">
+                                		<h5>Description</h5>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eu tortor mollis, placerat purus velVestibulum ante ipsum primis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>    	
+                                </div>
+                                <nav>
+                                    <a href="shop-details.html"><i class="fa fa-info-circle"></i> </a>
+                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                    <a href="placeholders/shop/thumbs/p-07.jpg" class="prettyPhoto"><i class="fa fa-search"></i> </a>
+                                    <a href="#"><i class="fa fa-star"></i> </a>
+                                </nav>  
+                              </div><!--end:p-info -->
+                          </div> 
+                     </li><!--end:item-->
+                     
+                     
+                     
+                     <li>
+                          <div class="s1-item">
+                              <div class="product-thumb">
+                              <a href="placeholders/shop/thumbs/p-08.jpg" class="prettyPhoto"><img src="placeholders/shop/thumbs/p-08.jpg"></a>
+                              </div>
+                              <div class="p-info">
+                                <h4>iTaste MVP 20w</h4>
+                                <span> $xx.xx 	</span>
+                                <div class="p-desc">
+                                		<h5>Description</h5>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eu tortor mollis, placerat purus velVestibulum ante ipsum primis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>    	
+                                </div>
+                                <nav>
+                                    <a href="shop-details.html"><i class="fa fa-info-circle"></i> </a>
+                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                    <a href="placeholders/shop/thumbs/p-08.jpg" class="prettyPhoto"><i class="fa fa-search"></i> </a>
+                                    <a href="#"><i class="fa fa-star"></i> </a>
+                                </nav>  
+                              </div><!--end:p-info -->
+                          </div> 
+                     </li><!--end:item-->
+                     
+                     
+                     <li>
+                          <div class="s1-item">
+                              <div class="product-thumb">
+                              <a href="placeholders/shop/thumbs/p-09.jpg" class="prettyPhoto"><img src="placeholders/shop/thumbs/p-09.jpg"></a>
+                              </div>
+                              <div class="p-info">
+                                <h4>Hana DNA 40</h4>
+                                <span>$xx.xx  	</span>
+                                <div class="p-desc">
+                                		<h5>Description</h5>
+                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eu tortor mollis, placerat purus velVestibulum ante ipsum primis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>    	
+                                </div>
+                                <nav>
+                                    <a href="shop-details.html"><i class="fa fa-info-circle"></i> </a>
+                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                    <a href="placeholders/shop/thumbs/p-09.jpg" class="prettyPhoto"><i class="fa fa-search"></i> </a>
+                                    <a href="#"><i class="fa fa-star"></i> </a>
+                                </nav>  
+                              </div><!--end:p-info -->
+                          </div> 
+                     </li><!--end:item-->
+                      
+                  </ul>
+                  
+                  
+                  <div class="pagination">
+                  	<a href="#" class="prev-btn"><i class="fa fa-angle-left"></i></a>
+                    	<div class="pages">
+                      <a href="#">1</a>
+                      <a href="#" class="active">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#">5</a>
+                      <a href="#">6</a>
+                      <a href="#">7</a>
+                      </div> <!--end:pages-->
+                      <a href="#" class="next-btn"><i class="fa fa-angle-right"></i> </a>                
+                  </div>
+
+    
+            	</div><!--end:colright -->
+              
+           </div><!--end:row-->
+        </div><!--end:container-->
+    </div><!--end:main-->
+    
+    
+    
+    
+    
+    
+    <footer>
+       
+    </footer><!--end:footer-->
+    
+    
+    <div class="copyright">
+    	 <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12">Copyright 2014 - One template by <a href="http://woorockets.com" target="_blank">woorockets.com</a>.  Powered by <a href="#" >Html5 & Css3</a></div>
+                <div class="col-lg-7 col-md-7 col-sm-12 clearfix">
+                	<div class="socials" style="float:right">
+                    <a href="#" class="facebook">		<i class="fa fa-facebook"></i> 		<span>facebook</span></a>
+                    <a href="#" class="twitter">		<i class="fa fa-twitter"></i> 		<span>twitter</span></a>
+                    <a href="#" class="linkedin">		<i class="fa fa-linkedin"></i> 		<span>linkedin</span></a>
+                    <a href="#" class="instagram">		<i class="fa fa-instagram"></i> 		<span>instagram</span></a>
+                    <a href="#" class="gplus">			<i class="fa fa-google-plus"></i> 	<span>google plus</span></a>
+                  </div> 
+                </div>
+            </div>
+        </div>
+    </div><!--end:copyright-->
+    <a href="#" class="back-to-top"> <i class="fa fa-angle-up"></i> </a>
+    
+</div> <!--end:wrapper-->
+	
+
+<!--jQuery-->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<!--Bootstrap-->    
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--Parallax-->
+	<script type="text/javascript" src="js/stellar.js"></script>
+<!--Fancy Select-->
+	<script type="text/javascript" src="js/fancySelect.js"></script>
+<!--jQuery Ui-->
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+<!--Pretty Photo-->
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!--Header Sticky -->
+    <script type="text/javascript" src="js/waypoints.min.js" ></script>
+<!--Mobile Menu -->    
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+<!--Owl Carousel-->
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+<!--iSotope-->
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<!--Circle Chart-->
+	<script type="text/javascript" src="js/jquery.circliful.min.js"></script>         
+<!--scrollReveal-->
+	<script type="text/javascript" src="js/scrollReveal.js"></script>
+<!--Html5 player-->    
+    <script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
+<!--Countdown--> 
+    <script type="text/javascript" src="js/TimeCircles.js"></script>
+<!--Counter Up-->     
+    <script type="text/javascript" src="js/jquery-counterup.js"></script> 
+<!-- Responsive video -->
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<!--Flat Surface Shader -->     
+    <script type="text/javascript" src="js/fss.js"></script>
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>    
+<!--Onepage scroll-->     
+    <script type="text/javascript" src="js/jQuery-scrollnav.js"></script>        
+<!--Background video-->     
+    <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>             
+<!--Switch Style-->    
+    <script src="js/styleswitch.js"></script>          
+<!--Retina support-->
+	<script type="text/javascript" src="js/retina.js"></script>
+<!--Main Script-->
+	<script type="text/javascript" src="js/main.js"></script>  
+    
+    
+
+
+</body>
+</html>
